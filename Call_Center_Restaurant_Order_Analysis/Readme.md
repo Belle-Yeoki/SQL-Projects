@@ -1,4 +1,4 @@
-### Unwrapping Food Delivery Insights: A Call Center Restaurant Orders Analysis
+# Unwrapping Food Delivery Insights: A Call Center Restaurant Orders Analysis
 ![](Ccoverpage.png)
 ## Introduction
 Over the past few weeks, I took a deep dive into a food delivery dataset with 72,314 orders, involving 6,262 unique customers, 408 restaurants, and a fleet of delivery drivers. As a data analyst, my goal was to help uncover the operational strengths, challenges, and untapped opportunities in this delivery business.
