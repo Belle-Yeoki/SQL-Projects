@@ -112,13 +112,14 @@ ORDER BY
 3. Top 5 Restaurants by Revenue
 Certain restaurants consistently outperformed others. These top spots not only had the most orders but also generated significantly higher delivery fees and tips.
 
-4. Driver Performance
+4. Driver Performance Tips
 Some drivers consistently received more tips than others. Drivers with quicker delivery times were often rewarded more — highlighting the link between speed and customer satisfaction, the Top five(5) drivers and tips collected are:
-* Laura - $2365.070003...
-* Marilyn - $2351.2299...
-* Patricia - $2336.1399...
-* Sheila - $2324.4999...
-* Chelsea - $2321.4700..
+* Laura - $2365.07
+* Marilyn - $2351.22
+* Patricia - $2336.14
+* Sheila - $2324.50
+* Chelsea - $2321.47
+* Average tip per order across all drivers: $9.49
 
 ```
 -- Total_Tips collected by Driver
@@ -140,7 +141,8 @@ SELECT AVG(Tip) AS Avg_Tip_Per_Order
 FROM [Call-Center_Restaurant-Orders_Challenge]
 ```
 
-6. Deliveries  carried out by Driver.
+6.Driver Performance Delivery Volume
+Deliveries  carried out by Driver.
 * Doris-244
 * Bailey-244
 * Patricia - 240
@@ -164,11 +166,11 @@ ORDER BY
 
 7. Revenue distribution across the months
 _Note: We have just three months across this year 2020_
-However the month of April witnessed higher revenue inflow in terms of delivery fee
-+ January - $72591.1200....
-+ Febuary - $99438.6399... 
-+ March - $109601.3800...
-+ April - $124117.10003308
+However the month of April witnessed higher revenue inflow in terms of delivery fee;This shows both market growth and possibly improved logistics.
++ January - $72,591.1200
++ Febuary - $994,38.6399 
++ March - $109,601.3800
++ April - $124,117.10003308
 ```
 --Which Month had the highest delivery revenue?
 	SELECT 
@@ -197,6 +199,9 @@ ORDER BY
     Month;
 ```
 8.  Delivery Time Pattern by Driver Month and Area.
++ Drivers like Michele (156 mins avg), Kate (158 mins), Juan (158 mins) consistently had lower average delivery times.
+
+These drivers may serve as models for best practices or trainers for slower-performing drivers.
 
 The following drivers although having had fewer deliveries by those who got more order and tip are noted for theur swift delivery time
 + Andrea - 132 Deliveries Avg_Delivery Minute -162
@@ -258,6 +263,7 @@ ORDER BY
     Month;
 ```
 + Delivery times varied significantly by area. Densely populated or hard-to-reach neighborhoods had higher delivery time averages.
++ While Some areas had higher delivery time averages due to likely geographic or traffic constraints.
 ```
 --Average delivery time by Area
 SELECT 
@@ -361,17 +367,43 @@ ORDER BY
     Total_Deliveries DESC;
 ```
 ## Recommendations
-* Reward high-performing drivers (by tips or delivery time) to maintain quality.
 
-* Collaborate more with high-revenue restaurants, even if their order counts are lower.
++ Recognize and reward drivers like Michele, Kate, and Juan for consistent performance.
 
-* Optimize driver routes for areas with longer delivery times.
++ Use them in peer-training programs.
 
-* Consider pre-positioning drivers during peak "ASAP" request times.
++ Build Strategic Partnerships with High-Revenue Restaurants
 
-* Perform monthly reviews of performance metrics to identify seasonal patterns.
++ Focus on restaurants like ID 7062 and 7208.
+
++ Offer promotional boosts or premium listing for top contributors.
+
++ Optimize Delivery Routes in Slow Areas
+
++ Analyze geographic data to reallocate resources to traffic-prone areas.
+
++ Introduce zone-based delivery time expectations.
+
++ Use Tip Metrics to Improve Service
+
++ Educate drivers on how speed and professionalism affect tipping.
+
++ Identify gaps where high tip potential is not being realized.
+
++ Predictive Planning Using Monthly Trends
+
++ Allocate drivers and marketing budgets based on monthly performance data.
+
++ Plan for increased activity in Q2, as seen in March and April.
+
++ Monitor and Expand ASAP Order Strategy
+
++ Track customer preferences around urgency.
+
++ Ensure enough drivers are available during peak ASAP order windows.
 
 ## Conclusion
+The analysis clearly shows that operational excellence hinges on a few high-performing restaurants and drivers. However, not all high-volume contributors bring in the most value. There are clear patterns of efficiency both in delivery times and customer tipping , that should be leveraged to improve performance and customer satisfaction.
 This project was more than just running SQL queries — it was about telling a story with data, listening to what the numbers were saying, and helping the business serve its customers better. With insights in hand, the business can now optimize delivery operations, boost revenue, and increase customer satisfaction.
 
 For me, this was a rewarding journey that sharpened my analytical thinking and SQL skills. And I’m excited for the next problem to solve.
