@@ -1,8 +1,7 @@
 # Unwrapping Food Delivery Insights: A Call Center Restaurant Orders Analysis
 ![](Ccoverpage.png)
 ## Introduction
-Over the past few weeks, I took a deep dive into a food delivery dataset with 72,314 orders, involving 6,262 unique customers, 408 restaurants, and a fleet of delivery drivers. As a data analyst, my goal was to help uncover the operational strengths, challenges, and untapped opportunities in this delivery business.
-
+In a highly dynamic food delivery landscape, every minute counts. Behind each delivered meal lies a complex system of order placements, restaurant preparation, driver logistics, and customer expectations. I analyzed a dataset of 72,314 orders, 6,262 customers, 408 restaurants, and 432 drivers to uncover operational strengths, inefficiencies, and growth opportunities for a food delivery business.
 Food delivery is a fast-paced game — and behind every hot meal delivered is a chain of processes that either delight customers or lead to delays and lost revenue. This project is about making sense of that.
 
 ## Problem Statement
@@ -23,17 +22,15 @@ The business needed answers, and I was determined to find them.
 ## Objective
 The key objectives of this project were:
 
-Identify top-performing restaurants based on order volume and revenue.
++ Identify top-performing restaurants by order volume and revenue.
 
-Measure average delivery times and what influences them.
++ Measure delivery times and uncover delay drivers.
 
-Analyze driver performance, particularly around tip amounts and delivery efficiency.
++ Evaluate driver efficiency and tip correlation.
 
-Analyze driver performance, particularly around tip amounts and delivery efficiency.
++ Understand customer behaviors and preferences.
 
-Discover customer preferences, including ASAP requests and popular delivery areas.
-
-Provide actionable recommendations to improve customer experience and delivery operations.
++ Offer actionable recommendations to optimize delivery operations.
 
 ## Data Source
 The dataset was provided in Excel and uploaded to SQL Server Management Studio for querying. It contains timestamped order records, delivery details, financial figures (tips, discounts, fees), and driver/customer IDs.
@@ -63,10 +60,10 @@ Problem-Solving (translating business challenges into queries)
 Here are some of the most eye-opening discoveries:
 
 ### Key Metrics(KPIs)
-* Total Orders 72314
-* Total Customers 6262
-* Total Drivers 432
-* Unique Restaurants 408
+* Total Orders: 72314
+* Total Customers: 6262
+* Total Drivers: 432
+* Unique Restaurants: 408
 
 ```
 --Orders per Restaurant
@@ -82,6 +79,7 @@ ORDER BY
 ```
 1.Top Performing Restaurants
 Based on total orders, Restaurant ID 7320 leads with 256 orders, showing high demand and customer preference. A total of 9 restaurants had over 230 orders, indicating they are consistent performers. These restaurants may be driving a significant portion of revenue and should be prioritized in operational planning and partnerships.However, high volume didn’t always equal high revenue.
+_Note: High volume didn’t always mean high revenue._
 
 ```
 SELECT 
