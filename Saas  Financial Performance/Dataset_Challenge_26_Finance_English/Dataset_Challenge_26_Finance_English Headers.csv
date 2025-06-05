@@ -1,0 +1,20 @@
+Sheet,Column,Description
+TRANSACTION,Id,Unique identifier for the transaction record
+TRANSACTION,DATE,Date of the transaction
+TRANSACTION,COD_ACCOUNT,Code representing the financial account
+TRANSACTION,ACCOUNT,Description of the financial account
+TRANSACTION,Short_CLASS,"Short classification label (e.g., G&A)"
+TRANSACTION,CLASS,"Full classification category (e.g., General & Administrative)"
+TRANSACTION,TRANSACTION_TYPE,"Type of transaction (e.g., Invoice, Bill)"
+TRANSACTION,NAME,Name of the client or vendor
+TRANSACTION,MEMO/DESCRIPTION,Description or memo for the transaction
+TRANSACTION,REVENUE/EXPENSES,Indicates if the transaction is revenue or expense
+TRANSACTION,AMOUNT,Monetary value of the transaction
+BUDGET,Id,Unique identifier for the budget record
+BUDGET,Date,Date of the budget entry (typically month-end)
+BUDGET,COD_ACCOUNT,Code representing the financial account
+BUDGET,ACCOUNT,Description of the financial account
+BUDGET,Short_CLASS,"Short classification label (e.g., G&A)"
+BUDGET,CLASS,"Full classification category (e.g., General & Administrative)"
+BUDGET,REVENUE/EXPENSES,Indicates if the budget item is for revenue or expense
+BUDGET,BUDGET,Planned or estimated monetary amount for the account
